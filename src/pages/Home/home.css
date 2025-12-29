@@ -1,0 +1,89 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 200px;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.container .movies-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 100%;
+    padding: 0 3%;
+}
+
+.container .movies-list article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    height: auto;
+    overflow: hidden;
+    background-color: rgba(23, 23, 23, 0.5);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+}
+.container .movies-list article:hover,
+.container .movies-list article:active,
+.container .movies-list article:focus {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.container .movies-list article img {
+    max-width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 0;
+}
+.container .movies-list article .copy {
+    display: grid;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.container .movies-list article .copy h2 {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.95);
+}
+.container .movies-list article .copy p {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0.65em;
+}
+.container .movies-list article .copy .btn-group {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 1.75em;
+}
+.container .movies-list article .copy .btn-group .btn-access {
+    width: auto;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 40px;
+    color: rgba(41, 224, 169, 1);
+    border: 1px solid rgba(41, 224, 169, 0.5);
+    border-radius: 48px;
+    font-weight: 500;
+}
+.container .movies-list article .copy .btn-access:hover,
+.container .movies-list article .copy .btn-access:active,
+.container .movies-list article .copy .btn-access:focus {
+    opacity: 1;
+    transition: all 1ms ease;
+    color: #ffffff;
+    background-color: rgba(41, 224, 169, 0.6);
+}

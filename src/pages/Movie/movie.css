@@ -1,0 +1,110 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 200px;
+}
+
+.container { width: 100%; overflow: hidden; margin: 0 auto; padding: 160px 0; }
+.container .movie-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    max-width: 100%;
+    padding: 0 4%;
+}
+.container .movie-details img {
+    max-width: 50%;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 0;
+}
+.container .movie-details .info {
+    display: grid;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container .movie-details .info .copy {
+    display: grid;
+    gap: 24px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.container .movie-details .info .copy h2 {
+    width: 100%;
+    font-size: 2.5em;
+    line-height: 1.1em;
+    color: rgba(255, 255, 255, 0.95);
+}
+.container .movie-details .info .copy .assessment {
+    width: 100%;
+    overflow: hidden;
+    font-size: 1.05em;
+    font-weight: 400;
+    color: rgba(255, 217, 102, 0.8);
+    border-radius: 4px;
+}
+.container .movie-details .info .copy p {
+    width: 100%;
+    font-size: 1.1em;
+    line-height: 1.45em;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.container .movie-details .info .btn-group {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.container .movie-details .info .btn-group .btn-save {
+    width: auto;
+    overflow: hidden;
+    font-size: 1.05em;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(34, 43, 59, 0.55);
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+}
+.container .movie-details .info .btn-group .btn-video {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+.container .movie-details .info .btn-group .btn-video a {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 32px;
+    color: rgba(41, 224, 169, 1);
+    border: 1px solid rgba(41, 224, 169, 0.5);
+    background-color: rgba(41, 224, 169, 0);
+    border-radius: 48px;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+.container .movie-details .info .btn-group .btn-video a:hover,
+.container .movie-details .info .btn-group .btn-video a:active,
+.container .movie-details .info .btn-group .btn-video a:focus {
+    opacity: 1;
+    transition: all 1ms ease;
+    color: #ffffff;
+    background-color: rgba(41, 224, 169, 0.6);
+}

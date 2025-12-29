@@ -1,0 +1,46 @@
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.not-found .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    gap: 48px;
+}
+
+.not-found .content h1 {
+    width: 100%;
+    overflow: hidden;
+    color: #ffffff;
+    font-size: 3.25rem;
+}
+
+.not-found .content .btn-notfound {
+    width: auto;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 40px;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 48px;
+    font-weight: 500;
+    opacity: 1;
+    font-size: 1.1rem;
+}
+.not-found .content .btn-notfound:hover,
+.not-found .content .btn-notfound:active,
+.not-found .content .btn-notfound:focus {
+    opacity: 0.88;
+    transition: all 0.5ms ease;
+}
