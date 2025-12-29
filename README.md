@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# SOBRE O PROJETO PRIMEFLIX
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+STACKS: React 19 + React Router DOM 7 + Axios com CSS puro e Create React App como build tool. Aplicação SPA com roteamento client-side, consumo de API externa (TMDB) e armazenamento local.
 
-In the project directory, you can run:
+## DETALHANDO TECNOLOGIAS
+- **React 19** - Biblioteca JavaScript para criar interfaces de usuário
+- **React Router DOM 7** - Sistema de roteamento para navegação entre páginas
+- **Axios** - Biblioteca para fazer requisições HTTP à API
+- **CSS Puro** - Estilização sem frameworks adicionais
+- **Create React App** - Ferramenta para criar e configurar o projeto React
 
-### `npm start`
+Este é uma aplicação SPA (Single Page Application) que consome dados da API do TMDB (The Movie Database) e salva os filmes favoritos no armazenamento local do navegador.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Como Usar o Projeto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Instalação
 
-### `npm test`
+Primeiro, instale as dependências do projeto:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+### Executar o Projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para iniciar o projeto em modo de desenvolvimento, use o comando:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Isso vai:
+- Abrir o aplicativo no modo de desenvolvimento
+- Abrir automaticamente no navegador (http://localhost:3000)
+- Recarregar a página automaticamente quando você fizer alterações no código
+- Mostrar erros de lint no console do navegador
 
-### `npm run eject`
+### Executar Testes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Para executar os testes do projeto:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm test
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Isso abre o executor de testes em modo interativo, onde você pode ver e executar os testes do projeto.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Criar Versão de Produção
 
-## Learn More
+Para criar uma versão otimizada do projeto para produção:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Isso vai:
+- Criar uma pasta `build` com os arquivos otimizados
+- Minificar o código para melhor performance
+- Adicionar hashes nos nomes dos arquivos para controle de cache
+- Preparar o aplicativo para ser publicado em um servidor
 
-### Code Splitting
+### Ejetar do Create React App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Atenção: Esta é uma operação irreversível! Uma vez que você executar `eject`, não poderá voltar atrás!**
 
-### Analyzing the Bundle Size
+Se você quiser ter controle total sobre as configurações do projeto (webpack, Babel, ESLint, etc), pode executar:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm run eject
+```
 
-### Making a Progressive Web App
+Isso vai:
+- Remover a dependência do Create React App
+- Copiar todos os arquivos de configuração diretamente para o projeto
+- Dar controle total sobre as ferramentas de build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Importante:** Você não precisa usar o `eject`. As configurações padrão do Create React App são suficientes para a maioria dos projetos. Use apenas se realmente precisar personalizar algo específico.
