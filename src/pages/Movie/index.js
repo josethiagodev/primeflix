@@ -1,8 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
+import { toast } from 'react-toastify';
+import UseAnimations from "react-useanimations";
+import heart from 'react-useanimations/lib/heart';
+import video from 'react-useanimations/lib/video';
+
 import api from '../../services/api';
 import './movie.css';
+
 
 export default function Movie() {
     const { id } = useParams();
@@ -45,7 +51,7 @@ export default function Movie() {
     function handleSaveMovies() {
         // Recupera itens armazenados no local storage para serem usados na const 'myList'
         // Passa o nome da chave para o método getItem()
-        const myList = localStorage.getItem("@primeflixfavorites");
+        const myList = localStorage.getItem("@primeflix");
 
         // 1. Transformando a lista em JSON (string)
         // 2. Buscando dados na lista, se não existir nada, será uma lista vazia
@@ -55,13 +61,13 @@ export default function Movie() {
 
         // Se não encontrar nenhum filme pelo 'id', salva na const 'hasMovie'
         if(hasMovies) {
-            alert("ESSE FILME JÁ TEM NA LISTA");
+            toast.warn("Esse filme já existe na sua lista!")
             return;
         }
 
         savedMovies.push(movie);
-        localStorage.setItem( "@primeflixfavorites", JSON.stringify(savedMovies) );
-        alert("FILME SALVO COM SUCESSO!");
+        localStorage.setItem( "@primeflix", JSON.stringify(savedMovies) );
+        toast.success("Filme salvo com sucesso!")
 
     }
 
@@ -86,12 +92,12 @@ export default function Movie() {
                         <p>{movie.overview}</p>
                     </div>
                     <div className="btn-group">
-                        <button className="btn-save" onClick={handleSaveMovies}>Salvar</button>
-                        <button className="btn-video">
-                            <a target="blank" rel="external" href={`https://youtube.com/results?search_query=${movie.title} Trailer`}>
-                                Trailer
-                            </a>
+                        <button className="btn-save" onClick={handleSaveMovies}>
+                            <UseAnimations animation={heart} size={24} strokeColor="rgba(41, 224, 169, 1)" /> Salvar
                         </button>
+                        <a className="btn-video" target="blank" rel="external" href={`https://youtube.com/results?search_query=${movie.title} Trailer`}>
+                            <UseAnimations animation={video} size={24} strokeColor="rgba(255, 217, 102, 0.8)" /> Trailer
+                        </a>
                     </div>
                 </div>
             </div>

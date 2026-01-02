@@ -1,0 +1,143 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 200px;
+}
+.container .favorites { width: 100%; height: auto; overflow: hidden; padding: 0 4%; }
+.container .favorites h1 {
+    width: 100%;
+    font-size: 2.85em;
+    line-height: normal;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+}
+
+.container .favorites .notSaveMovie { 
+    width: 100%; 
+    height: auto; 
+    overflow: hidden;
+    padding: 48px;
+    background-color: rgba(23, 23, 23, 0.5);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 80px;
+}
+.container .favorites .notSaveMovie p {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 1.1em;
+    line-height: normal;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+.container .favorites ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 80px;
+}
+.container .favorites ul .card {
+    display: grid;
+    gap: 32px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 40px;
+    background-color: rgba(23, 23, 23, 0.5);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.container .favorites ul .card:hover,
+.container .favorites ul .card:active,
+.container .favorites ul .card:focus {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.container .favorites ul .card img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 0;
+}
+.container .favorites ul .card .info {
+    display: grid;
+    gap: 32px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.container .favorites ul .card .info .copy {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.container .favorites ul .card .info .copy h2 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 1.65em;
+    line-height: normal;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+}
+.container .favorites ul .card .info .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 24px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.container .favorites ul .card .info .btn-group .btn {
+    flex: 1 1 25%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    padding: 8px 0;
+    border-radius: 40px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.container .favorites ul .card .info .btn-group .btn.details {
+    color: #ffffff;
+    background-color: rgba(41, 224, 169, 0.6);
+    border: 0;
+}
+.container .favorites ul .card .info .btn-group .btn.details:hover,
+.container .favorites ul .card .info .btn-group .btn.details:active,
+.container .favorites ul .card .info .btn-group .btn.details:focus {
+    background-color: rgba(41, 224, 169, 0.4);
+}
+.container .favorites ul .card .info .btn-group .btn.delete {
+    background-color: transparent;
+    color: rgba(234, 133, 143, 0.75);
+    border: 1px solid rgba(234, 133, 143, 0.75);
+}
+.container .favorites ul .card .info .btn-group .btn.delete:hover,
+.container .favorites ul .card .info .btn-group .btn.delete:active,
+.container .favorites ul .card .info .btn-group .btn.delete:focus {
+    color: rgba(234, 133, 143, 1);
+    border: 1px solid rgba(234, 133, 143, 1);
+}
+.container .favorites ul .card .info .btn-group .btn .align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}

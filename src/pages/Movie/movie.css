@@ -65,46 +65,49 @@
     overflow: hidden;
 }
 .container .movie-details .info .btn-group .btn-save {
-    width: auto;
-    overflow: hidden;
-    font-size: 1.05em;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(34, 43, 59, 0.55);
-    border-radius: 8px;
-    text-align: center;
-    padding: 10px 16px;
-    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    height: 48px;
     cursor: pointer;
+    overflow: hidden;
+    padding: 0 24px;
+    border-radius: 8px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(41, 224, 169, 0.2);
+}
+.container .movie-details .info .btn-group .btn-save:hover,
+.container .movie-details .info .btn-group .btn-save:active,
+.container .movie-details .info .btn-group .btn-save:focus {
+    background-color: rgba(41, 224, 169, 0.5);
 }
 .container .movie-details .info .btn-group .btn-video {
-    width: auto;
-    height: auto;
-    overflow: hidden;
-    border: 0;
-    cursor: pointer;
-    background-color: transparent;
-}
-.container .movie-details .info .btn-group .btn-video a {
-    width: auto;
-    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    height: 48px;
     overflow: hidden;
     cursor: pointer;
     text-decoration: none;
-    padding: 10px 32px;
-    color: rgba(41, 224, 169, 1);
-    border: 1px solid rgba(41, 224, 169, 0.5);
-    background-color: rgba(41, 224, 169, 0);
+    padding: 0 32px;
     border-radius: 48px;
-    font-weight: 600;
-    font-size: 1.1em;
-    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 217, 102, 0.5);
 }
-.container .movie-details .info .btn-group .btn-video a:hover,
-.container .movie-details .info .btn-group .btn-video a:active,
-.container .movie-details .info .btn-group .btn-video a:focus {
+.container .movie-details .info .btn-group .btn-video:hover,
+.container .movie-details .info .btn-group .btn-video:active,
+.container .movie-details .info .btn-group .btn-video:focus {
     opacity: 1;
     transition: all 1ms ease;
-    color: #ffffff;
-    background-color: rgba(41, 224, 169, 0.6);
+    border: 1px solid rgba(255, 217, 102, 0.3);
+    background-color: rgba(255, 217, 102, 0.3);
 }

@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import UseAnimations from "react-useanimations";
+import visibility from 'react-useanimations/lib/visibility';
+
 import api from '../../services/api';
 import './home.css';
 
@@ -55,7 +58,9 @@ export default function Home() {
                                 <h2>{movie.title}</h2>
                                 <p>{movie.overview}</p>
                                 <div className="btn-group">
-                                    <Link to={`/movie/${movie.id}`} className="btn-access">Ver filme</Link>
+                                    <Link to={`/movie/${movie.id}`} className="btn-view">
+                                        <UseAnimations animation={visibility} size={24} strokeColor="rgba(41, 224, 169, 1)" /> Ver filme
+                                    </Link>
                                 </div>
                             </div>
                         </article>
