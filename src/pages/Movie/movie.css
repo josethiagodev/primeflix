@@ -84,7 +84,7 @@
 .container .movie-details .info .btn-group .btn-save:hover,
 .container .movie-details .info .btn-group .btn-save:active,
 .container .movie-details .info .btn-group .btn-save:focus {
-    background-color: rgba(41, 224, 169, 0.5);
+    background-color: rgba(41, 224, 169, 0.4);
 }
 .container .movie-details .info .btn-group .btn-video {
     display: flex;

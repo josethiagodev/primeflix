@@ -1,0 +1,166 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 180px;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.container h1 {
+    width: 100%;
+    font-size: 2.5em;
+    line-height: 1.1em;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+.container .register-posts {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 48px;
+    padding: 0 4%;
+}
+.container .register-posts .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; 
+    gap: 24px;
+    max-width: 60%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.container .register-posts .content .row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 4px;
+}
+.container .register-posts .content .row label {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+}
+.container .register-posts .content .row input,
+.container .register-posts .content .row textarea {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    overflow: hidden;
+    padding: 16px 24px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+.container .register-posts .content .row input:focus,
+.container .register-posts .content .row textarea:focus {
+    outline: 2px solid rgba(255, 217, 102, 0.5);
+    outline-offset: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.container .register-posts .content .btn-group {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.container .register-posts .content .btn-group .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+    height: 56px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 56px;
+    border: 0;
+}
+.container .register-posts .content .btn-group .register {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(41, 224, 169, 0.5);
+}
+.container .register-posts .content .btn-group .register:hover,
+.container .register-posts .content .btn-group .register:active,
+.container .register-posts .content .btn-group .register:focus {
+    background-color: rgba(41, 224, 169, 0.7);
+}
+.container .register-posts .content .btn-group .search {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: normal;
+    background-color: transparent;
+    color: rgba(255, 217, 102, 0.5);
+    border: 1px solid rgba(255, 217, 102, 0.5);
+}
+.container .register-posts .content .btn-group .search:hover,
+.container .register-posts .content .btn-group .search:active,
+.container .register-posts .content .btn-group .search:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 217, 102, 0.3);
+    border: 1px solid rgba(255, 217, 102, 0.3);
+}
+
+
+/* Lista das Postagens (.map) */
+.container ul.list-posts {
+    display: grid;
+    gap: 8px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 80px;
+    padding: 40px;
+}
+.container ul.list-posts li {
+    list-style: none;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 24px 40px;
+    text-align: left;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.container ul.list-posts li:hover,
+.container ul.list-posts li:active,
+.container ul.list-posts li:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.container ul.list-posts li span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}

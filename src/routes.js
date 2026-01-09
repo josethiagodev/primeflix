@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Movie from "./pages/Movie";
 import Erro from "./pages/Erro";
 import Favorites from "./pages/Favorites";
+import Posts from "./pages/Posts";
 
 import Header from "./components/Header";
 
@@ -16,6 +17,7 @@ export default function RoutesApp() {
                 <Route path="/" element={ <Home /> } />
                 <Route path="/movie/:id" element={ <Movie /> } />
                 <Route path="/favorites" element={ <Favorites /> } />
+                <Route path="/posts" element={ <Posts /> } />
 
                 <Route path="*" element={ <Erro /> } />
             </Routes>

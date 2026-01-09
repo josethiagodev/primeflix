@@ -10,8 +10,7 @@
 .container {
     width: 100%;
     overflow: hidden;
-    margin: 0 auto;
-    padding: 80px 0;
+    margin: 120px auto;
 }
 
 .container .movies-list {

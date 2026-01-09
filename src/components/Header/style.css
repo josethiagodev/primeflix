@@ -19,6 +19,35 @@ header .logotipo {
     font-weight: bold;
     color: #ffffff;
 }
+
+
+header .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+header .links .btn-link {
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border: 0;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+header .links .btn-link:hover,
+header .links .btn-link:active,
+header .links .btn-link:focus {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
 header .btn-favorites {
     display: flex;
     align-items: center;
