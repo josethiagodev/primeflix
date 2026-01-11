@@ -1,31 +1,33 @@
 # PrimeFlix - Plataforma de Filmes e Conteúdo
 
 ## Visão Geral do Projeto
-O **PrimeFlix** é uma aplicação web moderna para explorar filmes e gerenciar conteúdo. Funciona como um catálogo de filmes onde os usuários podem descobrir novidades, salvar favoritos e criar postagens em um blog integrado.
+O **PrimeFlix** é uma aplicação web moderna para explorar filmes e gerenciar conteúdos. Funciona como um catálogo de filmes onde os usuários podem descobrir novidades, salvar favoritos e criar postagens em um blog integrado.
 
 ### O Que Esta Aplicação Faz
 Esta é uma **Single Page Application (SPA)**, ou seja, uma aplicação web que funciona sem recarregar a página inteira. Ela oferece três funcionalidades principais:
 
 1. **Catálogo de Filmes**: Busca e exibe filmes em cartaz usando dados da API do TMDB (The Movie Database)
 2. **Sistema de Favoritos**: Permite salvar filmes preferidos no navegador do usuário
-3. **Blog de Postagens**: Sistema de criação e armazenamento de postagens usando Firebase (banco de dados em nuvem)
+3. **Blog de Postagens**: Sistema de criação e armazenamento de postagens usando banco de dados do Firebase
+
 
 ---
+
 
 ## Tecnologias Utilizadas
 O projeto foi construído com tecnologias modernas e usadas no mercado atual:
 
-| Tecnologia | Versão | Função Principal |
-|------------|--------|------------------|
 **React 19.2.3**: Framework para construir a interface do usuário
 **React Router DOM 7.11.0**: Gerencia a navegação entre páginas dentro da aplicação
 **Axios 1.13.2**: Realiza as conexões com APIs externas
-**Firebase 12.7.0**: Fornece banco de dados em nuvem para armazenar postagens (Cloud Firestore)
+**Firebase 12.7.0**: Fornece banco de dados em nuvem para armazenar postagens (Cloud Firestore Database)
 **React Toastify 11.0.5**: Exibe notificações visuais (sucesso, erro, avisos)
 **React UseAnimations 2.10.0**: Adiciona ícones animados para melhorar a experiência visual
 **CSS Puro**: Estilização customizada sem dependências adicionais
 
+
 ---
+
 
 ## Funcionalidades Implementadas
 
@@ -112,8 +114,8 @@ PrimeFlix/
 - Node.js instalado (versão 14 ou superior recomendada)
 - NPM (geralmente vem junto com Node.js)
 
-### Passo 1: Instalar Dependências
 
+### Passo 1: Instalar Dependências
 Abra o terminal na pasta do projeto e execute:
 
 ```bash
@@ -122,8 +124,8 @@ npm install
 
 Este comando instala todas as bibliotecas necessárias para o projeto funcionar.
 
-### Passo 2: Iniciar o Servidor de Desenvolvimento
 
+### Passo 2: Iniciar o Servidor de Desenvolvimento
 Execute o comando:
 
 ```bash
@@ -136,14 +138,16 @@ O que acontece:
 - ✅ Monitora mudanças no código e recarrega automaticamente
 - ✅ Exibe erros no console para facilitar o debug
 
-### Outros Comandos Disponíveis
 
+### Outros Comandos Disponíveis
 ```bash
 npm run build    # Cria versão otimizada para produção
 npm test         # Executa os testes automatizados
 ```
 
+
 ---
+
 
 ## Status Atual do Projeto
 
@@ -151,16 +155,13 @@ npm test         # Executa os testes automatizados
 - Sistema completo de navegação entre páginas
 - Integração com API externa (TMDB) funcionando
 - Sistema de favoritos usando armazenamento local
-- CRUD de postagens com Firebase
-- Interface responsiva e moderna
+- CRUD de postagens com Firebase através do Database Cloud Firestore
 - Notificações visuais para ações do usuário
 - Tratamento de erros e páginas não encontradas
 
-### ⚠️ Observações Importantes
-- A API key do TMDB está visível no código (recomenda-se usar variáveis de ambiente em produção)
-- O projeto está pronto para uso e testes locais
 
 ---
+
 
 ## Diferenciais Técnicos
 

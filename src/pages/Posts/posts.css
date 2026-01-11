@@ -122,6 +122,20 @@
     background-color: rgba(255, 217, 102, 0.3);
     border: 1px solid rgba(255, 217, 102, 0.3);
 }
+.container .register-posts .content .btn-group .updated {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: normal;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.container .register-posts .content .btn-group .updated:hover,
+.container .register-posts .content .btn-group .updated:active,
+.container .register-posts .content .btn-group .updated:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
 
 /* Lista das Postagens (.map) */
@@ -138,7 +152,7 @@
     list-style: none;
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 48px;
     max-width: 100%;
     height: auto;
@@ -163,4 +177,30 @@
     overflow: hidden;
     text-align: left;
     color: rgba(255, 255, 255, 1);
+}
+.container ul.list-posts li span .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: auto;
+    height: 48px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 48px;
+    padding: 0 24px;
+}
+.container ul.list-posts li span .btn.delete {
+    background-color: transparent;
+    color: rgba(234, 133, 143, 1);
+    border: 1px solid rgba(234, 133, 143, 0.5);
+}
+.container ul.list-posts li span .btn.delete:hover,
+.container ul.list-posts li span .btn.delete:active,
+.container ul.list-posts li span .btn.delete:focus {
+    background-color: rgba(234, 133, 143, 0.10);
 }
