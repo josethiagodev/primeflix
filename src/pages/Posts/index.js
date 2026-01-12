@@ -31,26 +31,24 @@ export default function Posts() {
 
     // Buscando todas postagens em tempo real com 'onSnapshot' no 'Cloud Firestore Database'
     useEffect(() => {
-        const unsubscribe = onSnapshot(collection(db, "posts"), (snapshot) => {
-            let listPosts = [];
+        async function loadPosts() {
+            const unSub = onSnapshot(collection(db, "posts"), (snapshot) => {
+                let listPosts = [];
 
-            snapshot.forEach((doc) => {
-                listPosts.push({
-                    id: doc.id,
-                    title: doc.data().title,
-                    description: doc.data().description,
-                    author: doc.data().author,
-                });
-            });
+                snapshot.forEach((doc) => {
+                    listPosts.push({
+                        id: doc.id,
+                        title: doc.data().title,
+                        description: doc.data().description,
+                        author: doc.data().author,
+                    })
+                })
 
-            setPosts(listPosts);
-        }, (error) => {
-            console.log("Erro ao buscar postagens em tempo real:", error);
-            toast.warn("Erro ao buscar postagens!");
-        });
+                setPosts(listPosts);
+            })
+        }
 
-        // Limpar o listener quando o componente desmontar
-        return () => unsubscribe();
+        loadPosts();
     }, []);
 
 
@@ -61,7 +59,7 @@ export default function Posts() {
         await addDoc(collection(db, "posts"), {
             title: title,
             description: description,
-            author: author
+            author: author,
         })
         .then(() => {
             toast.success("Postagem cadastrada com sucesso!");
@@ -137,7 +135,7 @@ export default function Posts() {
         await updateDoc(docRef, {
             title: title,
             description: description,
-            author: author
+            author: author,
         })
         .then(()=> {
             toast.success("Postagem atualizada com sucesso!");

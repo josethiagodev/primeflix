@@ -21,7 +21,7 @@ export default function Movie() {
         async function loadMovie() {
             await api.get(`/movie/${id}`, {
                 params: {
-                    api_key: "3a8e633fba7efeb3a36d0d4cdeb38a26",
+                    api_key: process.env.REACT_APP_TMDB_API_KEY,
                     language: "pt-BR",
                     // append_to_response: 20,
                 }
@@ -57,7 +57,9 @@ export default function Movie() {
         // 2. Buscando dados na lista, se não existir nada, será uma lista vazia
         let savedMovies = JSON.parse(myList) || [];
 
-        const hasMovies = savedMovies.some( (moviesSave) => moviesSave.id === movie.id);
+        const hasMovies = savedMovies.some( 
+            (moviesSave) => moviesSave.id === movie.id
+        );
 
         // Se não encontrar nenhum filme pelo 'id', salva na const 'hasMovie'
         if(hasMovies) {
@@ -66,7 +68,9 @@ export default function Movie() {
         }
 
         savedMovies.push(movie);
-        localStorage.setItem( "@primeflix", JSON.stringify(savedMovies) );
+        localStorage.setItem( 
+            "@primeflix", JSON.stringify(savedMovies) 
+        );
         toast.success("Filme salvo com sucesso!")
 
     }

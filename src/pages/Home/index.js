@@ -21,7 +21,7 @@ export default function Home() {
             // Buscando filmes da API + Esperando a requisição acabar
             const response = await api.get("movie/now_playing", {
                 params: {
-                    api_key: "3a8e633fba7efeb3a36d0d4cdeb38a26",
+                    api_key: process.env.REACT_APP_TMDB_API_KEY,
                     language: "pt-BR",
                     page: 1,
                 }
