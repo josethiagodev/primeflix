@@ -48,19 +48,46 @@ header .links .btn-link:focus {
 }
 
 
-header .btn-favorites {
+header .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+header .btn-group .btn {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4px;
-    text-decoration: none;
-    color: rgba(41, 224, 169, 1);
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: normal;
     border: 0;
+    text-decoration: none;
 }
-header .btn-favorites:hover,
-header .btn-favorites:active,
-header .btn-favorites:focus {
+header .btn-group .favorites {
+    background-color: transparent;
+    color: rgba(41, 224, 169, 1);
+    border-radius: 48px;
+    font-weight: 500;
+}
+header .btn-group .favorites:hover,
+header .btn-group .favorites:active,
+header .btn-group .favorites:focus {
     color: rgba(41, 224, 169, 0.7);
+}
+header .btn-group .register {
+    background-color: rgba(130, 75, 233, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 48px;
+    padding: 10px 24px;
+    font-weight: 600;
+}
+header .btn-group .register:hover,
+header .btn-group .register:active,
+header .btn-group .register:focus {
+    background-color: rgba(130, 60, 233, 1);
 }

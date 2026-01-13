@@ -5,6 +5,7 @@ import Movie from "./pages/Movie";
 import Erro from "./pages/Erro";
 import Favorites from "./pages/Favorites";
 import Posts from "./pages/Posts";
+import RegisterAccount from "./pages/RegisterAccount";
 
 import Header from "./components/Header";
 
@@ -16,7 +17,10 @@ export default function RoutesApp() {
             <Routes>
                 <Route path="/" element={ <Home /> } />
                 <Route path="/movie/:id" element={ <Movie /> } />
+
                 <Route path="/favorites" element={ <Favorites /> } />
+                <Route path="/registeraccount" element={ <RegisterAccount /> } />
+
                 <Route path="/posts" element={ <Posts /> } />
 
                 <Route path="*" element={ <Erro /> } />

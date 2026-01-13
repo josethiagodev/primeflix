@@ -1,0 +1,114 @@
+.register-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.register-account .container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.register-account .container h1 {
+    width: 100%;
+    font-size: 2.5em;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    margin-bottom: 56px;
+}
+.register-account .container .form {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.register-account .container .form .row {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.register-account .container .form .row .col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 4px;
+}
+.register-account .container .form .row .col label {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+}
+.register-account .container .form .row .col input,
+.register-account .container .form .row .col textarea {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    overflow: hidden;
+    padding: 16px 24px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+.register-account .container .form .row .col input:focus,
+.register-account .container .form .row .col textarea:focus {
+    outline: 2px solid rgba(255, 217, 102, 0.5);
+    outline-offset: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.register-account .container .btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.register-account .container .btn-group .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: auto;
+    height: 55px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 56px;
+    border: 0;
+    padding: 0 40px;
+}
+.register-account .container .btn-group .register {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(41, 224, 169, 0.65);
+}
+.register-account .container .btn-group .register:hover,
+.register-account .container .btn-group .register:active,
+.register-account .container .btn-group .register:focus {
+    background-color: rgba(41, 224, 169, 0.5);
+}

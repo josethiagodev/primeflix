@@ -15,9 +15,14 @@ export default function Header() {
                 <Link className="btn-link" to="/blog">Blog</Link>
             </div>
 
-            <Link className="btn-favorites" to="/favorites">
-                <UseAnimations animation={heart} size={24} strokeColor="rgba(41, 224, 169, 1)" /> Favoritos
-            </Link>
+            <div className="btn-group">
+                <Link className="btn favorites" to="/favorites">
+                    <UseAnimations animation={heart} size={24} strokeColor="rgba(41, 224, 169, 1)" /> Favoritos
+                </Link>
+                <Link className="btn register" to="/registerAccount">
+                    Cadastrar
+                </Link>
+            </div>
         </header>
     );
 }
