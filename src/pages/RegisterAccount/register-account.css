@@ -7,9 +7,7 @@
     overflow: hidden;
 }
 .register-account .container {
-    display: flex;
-    flex-direction: column;
-    width: auto;
+    max-width: 450px;
     height: auto;
     overflow: hidden;
     margin: 0 auto;
@@ -20,7 +18,7 @@
     line-height: normal;
     color: rgba(255, 255, 255, 1);
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: var(--space-48);
 }
 .register-account .container .form {
     width: 100%;
@@ -30,7 +28,7 @@
 }
 .register-account .container .form .row {
     display: grid;
-    gap: 20px;
+    gap: var(--space-24);
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -38,7 +36,7 @@
 .register-account .container .form .row .col {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: var(--space-12);
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -79,17 +77,17 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: var(--space-40);
     width: 100%;
     height: auto;
     overflow: hidden;
-    margin-top: 40px;
+    margin-top: var(--space-32);
 }
 .register-account .container .btn-group .btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    gap: var(--space-4);
     width: auto;
     height: 55px;
     overflow: hidden;
@@ -101,7 +99,7 @@
 }
 .register-account .container .btn-group .register {
     width: 100%;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     line-height: normal;
     color: rgba(255, 255, 255, 1);

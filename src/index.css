@@ -1,4 +1,50 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: sans-serif; background-color: #0a0a0a; }
 
+:root {
+    --space-4: 4px;
+    --space-8: 8px;
+    --space-12: 12px;
+    --space-16: 16px;
+    --space-24: 24px;
+    --space-32: 32px;
+    --space-40: 40px;
+    --space-48: 48px;
+    --space-56: 56px;
+    --space-64: 64px;
+    --space-72: 72px;
+    --space-80: 80px;
+    --space-88: 88px;
+    --space-96: 96px;
+
+    --font-12: 12px;
+    --font-14: 14px;
+    --font-16: 16px;
+    --font-18: 18px;
+    --font-20: 20px;
+    --font-24: 24px;
+    --font-32: 32px;
+    --font-40: 40px;
+    --font-48: 48px;
+    --font-56: 56px;
+    --font-64: 64px;
+    --font-72: 72px;
+    --font-80: 80px;
+
+    --weight-default: normal;
+    --weight-200: 200;
+    --weight-300: 300;
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+    --weight-800: 800;
+    --weight-bold: bold;
+
+    --line-height-default: 100%;
+    --line-height-small: 125%;
+    --line-height-medium: 150%;
+    --line-height-large: 175%;
+}
+
 .app { display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%; }

@@ -1,0 +1,218 @@
+.login-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.login-account .container {
+    max-width: 450px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.login-account .container h1 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 2.5em;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    margin-bottom: var(--space-48);
+}
+
+
+/* User Logged > INICIO */
+.login-account .container .userLogged {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-48);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 56px;
+    padding: 32px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+}
+.login-account .container .userLogged .copy {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-24);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.login-account .container .userLogged .copy h2 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+}
+.login-account .container .userLogged .copy p {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.75);
+}
+.login-account .container .userLogged .list-user {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.login-account .container .userLogged .list-user li {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-24);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+.login-account .container .userLogged .btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-24);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.login-account .container .userLogged .btn-group .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    padding: 10px 24px;
+    border-radius: 40px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: normal;
+}
+.login-account .container .userLogged .btn-group .closed {
+    background-color: transparent;
+    color: rgba(234, 133, 143, 0.75);
+    border: 1px solid rgba(234, 133, 143, 0.75);
+}
+.login-account .container .userLogged .btn-group .closed:hover,
+.login-account .container .userLogged .btn-group .closed:active,
+.login-account .container .userLogged .btn-group .closed:focus {
+    background-color: rgba(234, 133, 143, 0.15);
+    color: rgba(234, 133, 143, 1);
+    border: 1px solid rgba(234, 133, 143, 1);
+}
+
+
+.login-account .container .form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-32);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.login-account .container .form .row {
+    display: grid;
+    gap: var(--space-24);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.login-account .container .form .row .col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 4px;
+}
+.login-account .container .form .row .col label {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+}
+.login-account .container .form .row .col input,
+.login-account .container .form .row .col textarea {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    overflow: hidden;
+    padding: 16px 24px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+.login-account .container .form .row .col input:focus,
+.login-account .container .form .row .col textarea:focus {
+    outline: 2px solid rgba(255, 217, 102, 0.5);
+    outline-offset: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.login-account .container .btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-24);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.login-account .container .btn-group .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    width: auto;
+    height: 55px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 56px;
+    border: 0;
+    padding: 0 40px;
+}
+.login-account .container .btn-group .register {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(41, 224, 169, 0.65);
+}
+.login-account .container .btn-group .register:hover,
+.login-account .container .btn-group .register:active,
+.login-account .container .btn-group .register:focus {
+    background-color: rgba(41, 224, 169, 0.5);
+}

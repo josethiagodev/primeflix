@@ -64,14 +64,15 @@ header .btn-group .btn {
     justify-content: center;
     gap: 4px;
     font-size: 0.9rem;
+    font-weight: 600;
     line-height: normal;
     border: 0;
     text-decoration: none;
+    border-radius: 48px;
 }
 header .btn-group .favorites {
     background-color: transparent;
     color: rgba(41, 224, 169, 1);
-    border-radius: 48px;
     font-weight: 500;
 }
 header .btn-group .favorites:hover,
@@ -84,10 +85,19 @@ header .btn-group .register {
     color: rgba(255, 255, 255, 1);
     border-radius: 48px;
     padding: 10px 24px;
-    font-weight: 600;
 }
 header .btn-group .register:hover,
 header .btn-group .register:active,
 header .btn-group .register:focus {
     background-color: rgba(130, 60, 233, 1);
+}
+header .btn-group .login {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 24px;
+}
+header .btn-group .login:hover,
+header .btn-group .login:active,
+header .btn-group .login:focus {
+    background-color: rgba(255, 255, 255, 0.2);
 }

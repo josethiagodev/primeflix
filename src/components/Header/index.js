@@ -17,7 +17,11 @@ export default function Header() {
 
             <div className="btn-group">
                 <Link className="btn favorites" to="/favorites">
-                    <UseAnimations animation={heart} size={24} strokeColor="rgba(41, 224, 169, 1)" /> Favoritos
+                    <UseAnimations animation={heart} size={24} strokeColor="rgba(41, 224, 169, 1)" /> 
+                    Favoritos
+                </Link>
+                <Link className="btn login" to="/loginAccount">
+                    Entrar
                 </Link>
                 <Link className="btn register" to="/registerAccount">
                     Cadastrar
