@@ -8,7 +8,7 @@ O **PrimeFlix** é uma aplicação web moderna para explorar filmes e gerenciar 
 Esta é uma **Single Page Application (SPA)**, ou seja, uma aplicação web que funciona sem recarregar a página inteira. Ela oferece três funcionalidades principais:
 
 1. **Catálogo de Filmes**: Busca e exibe filmes em cartaz usando dados da API do TMDB (The Movie Database)
-2. **Sistema de Favoritos**: Permite salvar filmes preferidos no navegador do usuário
+2. **Sistema de Favoritos**: Permite salvar filmes preferidos no navegador do usuário com LocalStorage
 3. **Blog de Postagens**: Sistema de criação e armazenamento de postagens usando banco de dados do Firebase
 
 
