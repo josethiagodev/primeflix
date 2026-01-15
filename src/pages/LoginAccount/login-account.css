@@ -59,10 +59,10 @@
     width: 100%;
     height: auto;
     overflow: hidden;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: normal;
-    color: rgba(255, 255, 255, 0.75);
+    line-height: var(--line-height-medium);
+    color: rgba(255, 255, 255, 0.7);
 }
 .login-account .container .userLogged .list-user {
     display: flex;

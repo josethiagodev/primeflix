@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 
 import { auth } from '../../services/firebaseConnection';
 import { 
     signInWithEmailAndPassword, 
-    signOut
+    signOut, 
+    onAuthStateChanged
 } from 'firebase/auth';
 
 import './login-account.css';
@@ -52,6 +53,31 @@ export default function LoginAccount() {
         setUserData(false);
         setLoggedUserDetails({});
     }
+
+
+    useEffect(() => {
+        async function loginCheck() {
+            onAuthStateChanged(auth, (user) => {
+                if(user) {
+                    // Se tiver usuário logado
+                    console.log(user)
+                    setUserData(true);
+                    setLoggedUserDetails({
+                        uid: user.uid,
+                        email: user.email,
+                    });
+                } 
+                
+                else {
+                    // Se não tiver usuário logado
+                    setUserData(false);
+                    setLoggedUserDetails({});
+                }
+            })
+        }
+
+        loginCheck();
+    }, []);
 
 
     return (

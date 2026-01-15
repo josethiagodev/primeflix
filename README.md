@@ -1,4 +1,5 @@
 # PrimeFlix - Plataforma de Filmes e Conteúdo
+Aqui você vai encontrar uma visão completa do que eu desenvolvi da aplicação web PrimeFlix.
 
 ## Visão Geral do Projeto
 O **PrimeFlix** é uma aplicação web moderna para explorar filmes e gerenciar conteúdos. Funciona como um catálogo de filmes onde os usuários podem descobrir novidades, salvar favoritos e criar postagens em um blog integrado.
@@ -32,7 +33,7 @@ O projeto foi construído com tecnologias modernas e usadas no mercado atual:
 ## Funcionalidades Implementadas
 
 ### 🏠 Página Inicial (Home)
-- Lista os **10 filmes mais recentes** em cartaz
+- Lista dos filmes mais recentes em cartaz
 - Exibe informações básicas: título, sinopse e imagem
 - Botão para ver detalhes completos de cada filme
 - Interface responsiva com design moderno
@@ -63,15 +64,24 @@ O projeto foi construído com tecnologias modernas e usadas no mercado atual:
 - Exibe quando o usuário tenta acessar uma página inexistente
 - Botão para retornar à página inicial
 
-### 🧭 Navegação (Header)
-- Presente em todas as páginas
-- Links rápidos para Home, Blog e Favoritos
-- Design fixo no topo da tela para fácil acesso
+### ✏️ Página de Cadastro (RegisterAccount)
+- Permite que novos usuários criem conta usando autenticação do Firebase
+- Validação automática de email e senha
+- Verificação se o e-mail já está em uso
+- Notificações visuais para sucesso ou erros durante o cadastro
+- Após o cadastro, o usuário pode fazer login na plataforma
+
+### 🔐 Página de Login (LoginAccount)
+- Permite que usuários façam login na plataforma usando e-mail e senha
+- Usa autenticação do Firebase para validar as credenciais
+- Exibe informações do usuário após o login bem-sucedido (ID único e o e-mail do usuário logado)
+- Botão para fazer logout da conta
+- Validação de erros com mensagens claras para o usuário
+- Notificações visuais de sucesso ou erro durante o login
 
 ---
 
 ## Estrutura do Projeto
-
 ```
 PrimeFlix/
 ├── src/
@@ -81,7 +91,7 @@ PrimeFlix/
 │   │   ├── Favorites/      # Lista de filmes favoritos
 │   │   ├── Posts/          # Sistema de postagens/blog
 │   │   └── Erro/           # Página de erro 404
-│   │
+│   │   
 │   ├── components/         # Componentes reutilizáveis
 │   │   └── Header/         # Cabeçalho de navegação
 │   │
@@ -111,8 +121,8 @@ PrimeFlix/
 ## Como Executar o Projeto
 
 ### Pré-requisitos
-- Node.js instalado (versão 14 ou superior recomendada)
-- NPM (geralmente vem junto com Node.js)
+- Node.js (versão 14 ou superior recomendada)
+- NPM (geralmente vem junto com Node.js) ou Yarn
 
 
 ### Passo 1: Instalar Dependências
@@ -136,7 +146,7 @@ O que acontece:
 - ✅ Inicia o servidor de desenvolvimento
 - ✅ Abre automaticamente o navegador em `http://localhost:3000`
 - ✅ Monitora mudanças no código e recarrega automaticamente
-- ✅ Exibe erros no console para facilitar o debug
+- ✅ Exibe erros no console para facilitar o Debug
 
 
 ### Outros Comandos Disponíveis
@@ -157,26 +167,4 @@ npm test         # Executa os testes automatizados
 - Sistema de favoritos usando armazenamento local
 - CRUD de postagens com Firebase através do Database Cloud Firestore
 - Notificações visuais para ações do usuário
-- Tratamento de erros e páginas não encontradas
-
-
----
-
-
-## Diferenciais Técnicos
-
-- **Performance**: Aplicação leve que carrega rápido
-- **UX Moderna**: Animações suaves e feedback visual imediato
-- **Responsivo**: Funciona bem em diferentes tamanhos de tela
-- **Escalável**: Estrutura organizada facilita adicionar novas funcionalidades
-- **Integração Cloud**: Uso de Firebase para dados persistentes em nuvem
-
----
-
-## Próximos Passos Sugeridos
-
-- [ ] Implementar busca de filmes
-- [ ] Adicionar filtros e categorias
-- [ ] Sistema de autenticação de usuários
-- [ ] Comentários nas postagens
-- [ ] Melhorias na responsividade mobile
+- Tratamento de erros e páginas não encontradas (Error 404)
